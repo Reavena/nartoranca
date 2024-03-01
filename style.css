@@ -20,9 +20,9 @@
 
 @media (max-width:767px) {
     .photo-gallery h2 {
-        margin-bottom:25px;
-        padding-top:25px;
-        font-size:24px;
+        margin-bottom:0px;
+        padding-top:20px;
+        font-size:34px;
     }
 }
 
@@ -93,5 +93,6 @@
     max-width: 500px;
     margin: 0 auto 8px; /* Between the lines space*/
 }
+
 
 

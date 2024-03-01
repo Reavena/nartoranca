@@ -8,7 +8,7 @@
 * { /* Website frame*/
     margin: 0px;
     padding: 0px;
-    padding-top: 3px;
+    padding-top: 2px;
     box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 65%;
 }
 
 .nav-links li {
@@ -44,8 +44,8 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 16px;
-    padding: 20px 14px; /*colour box's padding top, right,bottom */
+    font-size: 18px;
+    padding: 20px 30px; /*colour box's padding top, right,bottom */
 }
 
 .nav-links a:hover:not(.active) {
@@ -54,4 +54,22 @@ nav {
 
 .nav-links li a.active {
     background-color: #4b7d45; /*Current page colour*/
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .heading {
+        text-align: center; /* Center text in the first row */
+    }
+
+    .nav-links {
+        width: 100%; /* Take up the full width */
+    }
+
+    .nav-links a {
+        padding: 10px 14px; /* Adjust padding for smaller screens */
+    }
 }
