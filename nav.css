@@ -1,11 +1,10 @@
-
 .heading h4 {
-    font-size:24px;
+    font-size: 24px;
     font-weight: normal; /* or font-weight: 400; */
 }
 
 /* Navigation bar*/
-* { /* Website frame*/
+* { /* Website frame */
     margin: 0px;
     padding: 0px;
     padding-top: 2px;
@@ -17,12 +16,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color: white; /* Nav bar's*/
+    background-color: white; /* Nav bar's */
     font-family: "Monotype Corsiva", "Times New Roman";
 }
 
 .heading {
-    color: black;  /* Nav Title's*/
+    color: black;  /* Nav Title's */
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 5px;
@@ -40,20 +39,20 @@ nav {
 }
 
 .nav-links a {
-    color: black; /* Selections text : Home, about*/
+    color: black; /* Selections text : Home, about */
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 18px;
-    padding: 20px 30px; /*colour box's padding top, right,bottom */
+    padding: 20px 30px; /* colour box's padding top, right, bottom */
 }
 
 .nav-links a:hover:not(.active) {
-    background-color: #c3c9d4; /* Hover for colour*/
+    background-color: #c3c9d4; /* Hover for colour */
 }
 
 .nav-links li a.active {
-    background-color: #4b7d45; /*Current page colour*/
+    background-color: #4b7d45; /* Current page colour */
 }
 
 @media only screen and (max-width: 768px) {
@@ -63,13 +62,24 @@ nav {
 
     .heading {
         text-align: center; /* Center text in the first row */
+        margin-bottom: 20px; /* Add some space below the heading */
     }
 
     .nav-links {
+        flex-direction: column; /* Stack links vertically */
         width: 100%; /* Take up the full width */
+        align-items: center; /* Center the links */
     }
 
     .nav-links a {
-        padding: 10px 14px; /* Adjust padding for smaller screens */
+        padding: 1px 60px; /* Adjust padding of the green box for smaller screens */
+        width: 100%; /* Make links take the full width */
+        text-align: center; /* Center text inside links */
+        font-size: 35px; /* Increase text size for mobile */
+        margin-bottom: 10px; /* Add space between links */
+    }
+
+    .nav-links a:last-child {
+        margin-bottom: 0; /* Remove margin from the last link */
     }
 }
