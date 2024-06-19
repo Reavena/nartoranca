@@ -72,10 +72,10 @@ nav {
     }
 
     .nav-links a {
-        padding: 1px 60px; /* Adjust padding of the green box for smaller screens */
+        padding: 1px 20px; /* Adjust padding of the green box for smaller screens */
         width: 100%; /* Make links take the full width */
         text-align: center; /* Center text inside links */
-        font-size: 35px; /* Increase text size for mobile */
+        font-size: 25px; /* Increase text size for mobile */
         margin-bottom: 10px; /* Add space between links */
     }
 
